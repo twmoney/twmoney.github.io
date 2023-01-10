@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html>
+<head prefix="website: http://ogp.me/ns/website#">
+    <meta charset="utf-8">
+
+    <title>LINE Official Account</title>
+
+    <meta property="og:type" content="website">
+    <meta property="og:title" content="LINE Official Account">
+    <meta property="og:url" content="https://liff.line.me/1654867680-wGKa63aV/?utm_source=LINE&amp;utm_medium=referral&amp;utm_campaign=oa_profile_footer">
+    <meta property="og:image" content="https://obs.line-scdn.net/0h6ckgK9WvaUxWHn8LswgWG3ZDYi5lfHdHdHghLnYXMHp8Jy90bXsvKHRJZ3kuLHkcbC11Ix0ePy4sKiseL3lzLiYfYH57/f256x256">
+    <meta property="og:description" content="リンクを開くにはこちらをタップ">
+
+    <meta name="viewport" content="width=device-width, user-scalable=no, initial-scale=1, maximum-scale=1, viewport-fit=cover">
+
+    <link rel="stylesheet" href="static/css/jump-page.css">
+
+    <script>
+      let liffAppFullUrl = "line://app/1654867680-wGKa63aV?liff.state=%3Futm_source%3DLINE%26utm_medium%3Dreferral%26utm_campaign%3Doa_profile_footer&liff.referrer=https%3A%2F%2Fliff.line.me%2F1654867680-wGKa63aV%2F%3Futm_source%3DLINE%26utm_medium%3Dreferral%26utm_campaign%3Doa_profile_footer";
+
+      const hash = location.hash;
+      if (hash) {
+        const liffState = "?utm_source=LINE&utm_medium=referral&utm_campaign=oa_profile_footer";
+        const liffStateWithHash = liffState + hash;
+
+        const lineLiffUrl = new URL("line://app/1654867680-wGKa63aV");
+        lineLiffUrl.searchParams.append("liff.state", liffStateWithHash)
+
+        const liffReferrer = "https://liff.line.me/1654867680-wGKa63aV/?utm_source=LINE&utm_medium=referral&utm_campaign=oa_profile_footer";
+        if (liffReferrer !== "") {
+          lineLiffUrl.searchParams.append("liff.referrer", liffReferrer)
+        }
+
+        liffAppFullUrl = lineLiffUrl.href
+      }
+
+      window.liffInfo = {
+        liffIconUrl: "https://obs.line-scdn.net/0h6ckgK9WvaUxWHn8LswgWG3ZDYi5lfHdHdHghLnYXMHp8Jy90bXsvKHRJZ3kuLHkcbC11Ix0ePy4sKiseL3lzLiYfYH57/f256x256",
+        liffAppDescription: "LINE Official Account",
+        liffAppUrl: liffAppFullUrl,
+        lineAppDownloadUrl: ""
+      };
+      window.translations = {
+        "liff.landingpage.miniApp.description": "无需安装或登录其他应用即可在LINE中体验{0}。",
+        "liff.landingpage.button.download": "下载LINE",
+        "liff.landingpage.button.open": "在LINE中打开",
+        "liff.landingpage.pc.title": "用智能手机打开页面",
+        "liff.landingpage.pc.qrcode.description": "请用智能手机版LINE扫描页面中的二维码。",
+        "liff.landingpage.pc.miniApp.description": "无需安装或登录应用，即可在智能手机版LINE中使用{0}。"
+      };
+    </script>
+
+    <noscript>Your browser does not support JavaScript! Please try to use a different browser to access this page.</noscript>
+
+    <script src="static/js/jump-page.js"></script>
+    <script src="static/js/pc.js"></script>
+</head>
+
+<body>
+    <!-- empty -->
+</body>
+
+</html>
